@@ -1,0 +1,3 @@
+/Users/theblindpew/Lab03_TIMP/formatter_lib/_build/CMakeFiles/formatter.dir
+/Users/theblindpew/Lab03_TIMP/formatter_lib/_build/CMakeFiles/edit_cache.dir
+/Users/theblindpew/Lab03_TIMP/formatter_lib/_build/CMakeFiles/rebuild_cache.dir
