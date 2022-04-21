@@ -22,7 +22,7 @@ jobs:
 
       - name: prepairing
         run: sudo apt install cmake g++ clang-11
-            sudo apt install lformatter
+          sudo apt install clang-format
       
       - name: Building of forrmater_lib
         run: |
