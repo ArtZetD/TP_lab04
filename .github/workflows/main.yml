@@ -35,6 +35,7 @@ jobs:
           pwd
           cd formatter_ex_lib
           pwd
+          ls
           cmake . -DCMAKE_CXX_COMPILER=clang++
           cmake --build .
           cd ..
