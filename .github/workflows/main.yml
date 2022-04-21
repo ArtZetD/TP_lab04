@@ -22,12 +22,13 @@ jobs:
 
       - name: prepairing
         run: sudo apt install cmake g++ clang-11
+          sudo apt install formatter
          
       
       - name: Building of forrmater_lib
         run: |
          cd formatter_lib
-         cmake . 
+         cmake . -DCMAKE_CXX_COMPILER=clang++
          cmake --build .
          cd ..
         
@@ -37,7 +38,7 @@ jobs:
           cd formatter_ex_lib
           pwd
           ls
-          cmake . 
+          cmake . -DCMAKE_CXX_COMPILER=clang++
           cmake --build .
           cd ..
           
@@ -45,7 +46,7 @@ jobs:
         run: |
           cd hello_world_application
           ls
-          cmake . 
+          cmake . -DCMAKE_CXX_COMPILER=clang++
           cmake --build .
           ls
           cd ..
@@ -53,14 +54,14 @@ jobs:
       - name: Building of solver_lib
         run: |
           cd solver_lib
-          cmake . 
+          cmake . -DCMAKE_CXX_COMPILER=clang++
           cmake --build .
           cd ..
           
       - name: Building of solver_application
         run: |
           cd solver_application
-          cmake . 
+          cmake . -DCMAKE_CXX_COMPILER=clang++
           cmake --build .
           cd .. 
           
