@@ -32,9 +32,9 @@ jobs:
         
       - name: Building of forrmater_ex_lib
         run: |
-          ls
+          pwd
           cd formatter_ex_lib
-          ls
+          pwd
           cmake . -DCMAKE_CXX_COMPILER=clang++
           cmake --build .
           cd ..
