@@ -27,7 +27,7 @@ jobs:
       - name: Building of forrmater_lib
         run: |
          cd formatter_lib
-         cmake . -DCMAKE_CXX_COMPILER=clang++
+         cmake . 
          cmake --build .
          cd ..
         
@@ -37,7 +37,7 @@ jobs:
           cd formatter_ex_lib
           pwd
           ls
-          cmake . -DCMAKE_CXX_COMPILER=clang++
+          cmake . 
           cmake --build .
           cd ..
           
@@ -45,7 +45,7 @@ jobs:
         run: |
           cd hello_world_application
           ls
-          cmake . -DCMAKE_CXX_COMPILER=clang++
+          cmake . 
           cmake --build .
           ls
           cd ..
@@ -53,14 +53,14 @@ jobs:
       - name: Building of solver_lib
         run: |
           cd solver_lib
-          cmake . -DCMAKE_CXX_COMPILER=clang++
+          cmake . 
           cmake --build .
           cd ..
           
       - name: Building of solver_application
         run: |
           cd solver_application
-          cmake . -DCMAKE_CXX_COMPILER=clang++
+          cmake . 
           cmake --build .
           cd .. 
           
