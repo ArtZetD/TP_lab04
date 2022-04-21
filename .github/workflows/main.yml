@@ -43,8 +43,10 @@ jobs:
       - name: Building of hello_world_application
         run: |
           cd hello_world_application
+          ls
           cmake . -DCMAKE_CXX_COMPILER=clang++
           cmake --build .
+          ls
           cd ..
           
       - name: Building of solver_lib
