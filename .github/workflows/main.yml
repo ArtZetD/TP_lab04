@@ -45,8 +45,6 @@ jobs:
           
       - name: Building of solver_lib
         run: |
-         pwd
-         la
           cd solver_lib
            cmake -B _build
           cd ..
@@ -54,8 +52,6 @@ jobs:
       - name: Building of solver_application
         run: |
           cd solver_application
-          pwd
-          la       
            cmake -B _build
           cd .. 
           
