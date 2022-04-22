@@ -46,15 +46,13 @@ jobs:
       - name: Building of solver_lib
         run: |
           cd solver_lib
-          cmake . -DCMAKE_CXX_COMPILER=clang++
-          cmake --build .
+           cmake -B _build
           cd ..
           
       - name: Building of solver_application
         run: |
           cd solver_application
-          cmake . -DCMAKE_CXX_COMPILER=clang++
-          cmake --build .
+           cmake -B _build
           cd .. 
           
   build_all_libraries_windows:
