@@ -55,6 +55,7 @@ jobs:
       - name: Building of solver_application
         run: |
           cd solver_application
+          pwd
            cmake -B _build
           cd .. 
           
